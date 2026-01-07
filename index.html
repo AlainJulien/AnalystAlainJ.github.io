@@ -1,202 +1,242 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Alain's Analyst Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alain Julien — BI Engineer & Systems Analyst</title>
+    <meta name="description" content="BI Engineer & Systems Analyst portfolio for Alain Julien. Pipelines, dashboards, public-sector analytics." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: { extend: { colors: { brand: '#18bfef' } } }
+      }
+    </script>
+  </head>
+  <body class="min-h-screen bg-white text-zinc-900 dark:bg-black dark:text-zinc-100">
+    <header class="sticky top-0 z-40 border-b bg-white/70 backdrop-blur dark:border-zinc-800 dark:bg-zinc-900/60">
+      <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
+        <div class="font-semibold">Alain Julien</div>
+        <nav class="hidden gap-6 text-sm md:flex">
+          <a href="#projects" class="hover:underline">Projects</a>
+          <a href="#archive" class="hover:underline">Archive</a>
+          <a href="#skills" class="hover:underline">Skills</a>
+          <a href="#contact" class="hover:underline">Contact</a>
+          <a href="https://github.com/AlainJulien/AnalystAlainJ.github.io/blob/main/assets/doc/Alain_Julien_Resume.pdf?raw=1" target="_blank" 
+          rel="noopener noreferrer" class="inline-flex items-center gap-1 hover:underline">Resume</a>
+        </nav>
+        <button id="themeToggle" class="rounded-full border p-2 dark:border-zinc-700">🌓</button>
+      </div>
+    </header>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+    <section class="mx-auto max-w-5xl px-4 py-16">
+      <div class="grid items-center gap-10 md:grid-cols-2">
+        <div>
+          <h1 class="text-4xl font-bold leading-tight md:text-5xl">Business Intelligence Engineer & Systems Analyst</h1>
+          <p class="mt-4 text-lg text-zinc-600 dark:text-zinc-300">I turn messy public-sector data into trusted pipelines and dashboards that drive decisions—fast.</p>
+          <p class="mt-4 text-zinc-700 dark:text-zinc-300">Experienced BI Engineer and Systems Analyst with 4+ years in Trinidad & Tobago's public sector. I build clean data pipelines and deliver insight-rich analytics across Oracle Fusion HCM rollouts (~40 entities). Strengths: SQL (Athena/BigQuery/Postgres), Python ETL, AWS (S3, Glue, Athena), and Power BI/Tableau/QuickSight.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="https://github.com/AlainJulien/AnalystAlainJ.github.io/blob/main/assets/doc/Alain_Julien_Resume.pdf?raw=1" target="_blank" 
+            rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-2xl border bg-[#18bfef] px-4 py-2 text-white shadow-sm">Download Resume</a>
+            <a href="#projects" class="inline-flex items-center gap-2 rounded-2xl border px-4 py-2">View Projects</a>
+            <a href="mailto:alain_j@live.com" class="inline-flex items-center gap-2 rounded-2xl border px-4 py-2">Contact</a>
+          </div>
+        </div>
+        <div class="rounded-2xl border p-6 shadow-sm dark:border-zinc-800">
+          <h3 class="mb-2 text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">What I Do</h3>
+          <ul class="space-y-3 text-zinc-700 dark:text-zinc-300">
+            <li>Design clean data models and production‑ready SQL.</li>
+            <li>Ship AWS pipelines (S3 → Glue → Athena/Redshift).</li>
+            <li>Build decision‑ready dashboards (Power BI/Tableau/QuickSight).</li>
+            <li>Public‑sector analytics & Oracle Fusion HCM implementation across government entities.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Alain's <br />
-						Analyst Portfolio</h1>
-						<p>I'm an Entry-level Data Analyst recently transitioned from Consultant looking to enter the Freelancing route <br />
-							From multiple projects and high level researching, I found the niche known as Data Analytics and I have dedicated <br />
-							a lot of time in order to learn the skills needed for the role. <br /><br />
-							I have completed the Google Data Analytics Professional Certificate along with other certificaitons<br />
-							to learn/garner skills needed.<br />
-							<a href="www.linkedin.com/in/alain-julien">@AJtheAnalyst</a></p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+    <section id="projects" class="mx-auto max-w-5xl px-4 pb-4">
+      <h2 class="mb-6 text-2xl font-semibold">Featured Projects</h2>
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="rounded-2xl border p-6 shadow-sm dark:border-zinc-800">
+          <!-- Image placeholder: replace with <img src="images/your-image.jpg" class="mb-4 h-40 w-full rounded-xl object-cover" alt="Project image" loading="lazy" /> when ready -->
+          <a href="https://github.com/your-username/your-repo" target="_blank" rel="noopener noreferrer" class="group block">
+          <img src="images/pub_sec_logo.png" class="mb-4 h-40 w-full rounded-xl object-cover" alt="Project image" loading="lazy" />
+          <!--  <div class="mb-4 flex h-40 w-full items-center justify-center rounded-xl bg-zinc-100 text-xs text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400">
+            Project image placeholder
+          </div> -->
+          <h3 class="text-lg font-semibold">Public-Sector Cloud BI Analytics</h3>
+          </a>
+          <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300">S3 → Glue → Athena SQL cleaning → Power BI dashboards. Service Reliability & FinOps.</p>
+          <div class="mt-3 flex flex-wrap gap-2 text-xs">
+            <span class="rounded-full border px-2.5 py-1 dark:border-zinc-700">AWS</span>
+            <span class="rounded-full border px-2.5 py-1 dark:border-zinc-700">ETL</span>
+            <span class="rounded-full border px-2.5 py-1 dark:border-zinc-700">Power BI</span>
+          </div>
+          <!-- Optional Notion link -->
+          <div class="mt-2 text-[11px] text-zinc-400 dark:text-zinc-500">
+          <a
+            href="https://your-notion-link-here" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 hover:text-zinc-700 dark:hover:text-zinc-300 transition"
+          >
+          View Analysis &amp; Design Decisions 
+          <span aria-hidden="true">↗</span>
+          </a>
+      </div>
+        </div>
+        <div class="rounded-2xl border p-6 shadow-sm dark:border-zinc-800">
+          <a href="https://income-to-rent-guide.lovable.app" target="_blank" rel="noopener noreferrer" class="group block">
+          <img src="images/rent_calculator.png" class="mb-4 h-40 w-full rounded-xl object-cover" alt="Project image" loading="lazy" /> 
+          <h3 class="text-lg font-semibold">Rent Sweet Spot Calculator — AI-Assisted Product Prototype</h3>
+          </a>
+          <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300">AI-Native Web App - Rent range using 25-35% guideline.</p>
+          <div class="mt-3 flex flex-wrap gap-2 text-xs">
+            <span class="rounded-full border px-2.5 py-1 dark:border-zinc-700">AI-Assisted Dev</span>
+            <span class="rounded-full border px-2.5 py-1 dark:border-zinc-700">Prototyping</span>
+            <span class="rounded-full border px-2.5 py-1 dark:border-zinc-700">UX Logic</span>
+          </div>
+        </div>
+        <div class="rounded-2xl border p-6 shadow-sm dark:border-zinc-800">
+          <!-- Image placeholder: replace with <img src="images/your-image.jpg" class="mb-4 h-40 w-full rounded-xl object-cover" alt="Project image" loading="lazy" /> when ready -->
+      <div class="mb-4 flex h-40 w-full items-center justify-center rounded-xl bg-zinc-100 text-xs text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400">
+        Project image placeholder
+      </div>
+        <h3 class="text-lg font-semibold">Seattle Illegal Dumping BI Project — Public Utilities</h3>
+          <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300">In Progress - Problem defined, sample data loaded</p>
+          <div class="mt-3 flex flex-wrap gap-2 text-xs">
+            <span class="rounded-full border px-2.5 py-1 dark:border-zinc-700">Python</span>
+            <span class="rounded-full border px-2.5 py-1 dark:border-zinc-700">Power BI</span>
+            <span class="rounded-full border px-2.5 py-1 dark:border-zinc-700">Geospatial Analytics</span>
+          </div>
+        </div>
+        <!--<div class="rounded-2xl border p-6 shadow-sm dark:border-zinc-800">-->
+          <!-- Image placeholder: replace with <img src="images/your-image.jpg" class="mb-4 h-40 w-full rounded-xl object-cover" alt="Project image" loading="lazy" /> when ready -->
+    <!-- <div class="mb-4 flex h-40 w-full items-center justify-center rounded-xl bg-zinc-100 text-xs text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400">
+        Project image placeholder
+      </div>
+      <h3 class="text-lg font-semibold">Oracle Fusion HCM Rollout Analytics — 39 MDAs</h3>
+          <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300">KPIs for SIT/UAT coverage, defect burn‑down, readiness.</p>
+          <div class="mt-3 flex flex-wrap gap-2 text-xs">
+            <span class="rounded-full border px-2.5 py-1 dark:border-zinc-700">Oracle HCM</span>
+            <span class="rounded-full border px-2.5 py-1 dark:border-zinc-700">SIT/UAT</span>
+            <span class="rounded-full border px-2.5 py-1 dark:border-zinc-700">Dashboards</span>  
+          </div> -->
+        </div>
+      </div>
+    </section>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Alain The Analyst</a>
-					</header>
-				<!-- Nav -->
-				<nav id="nav">
-					<ul class="links">
-						<li class="active"><a href="index.html">Projects</a></li>
-					</ul>
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/in/alain-julien/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
-						<li><a href="https://github.com/AlainJulien" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-					</ul>
-				</nav>	
-					<!-- Main -->
-					<div id="main">
+<section id="archive" class="mx-auto max-w-5xl px-4 pb-12">
+  <div class="mb-6 flex items-end justify-between gap-4">
+    <div>
+      <h2 class="text-2xl font-semibold">Archive</h2>
+      <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">Older projects and experiments. Keep these lightweight—still link to code or notes when possible.</p>
+    </div>
+  </div>
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="https://github.com/AlainJulien/AirBnB_Analytics/blob/main/AirBnB_Portfolio_script.sql">Data Cleaning In<br />
-									Microsoft SQL Server</a></h2>
-									<p>For this Project, the public, raw data of AirBnB's in the state of New Jersey<br />
-									was taken into MS SQL Server and made usable for analysis.<br />
-									</p>
-								</header>
-								<a href="https://github.com/AlainJulien/AirBnB_Analytics/blob/main/AirBnB_Portfolio_script.sql" class="image main"><img src="images/US_JerseyShore_US_Header.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/AlainJulien/AirBnB_Analytics/blob/main/AirBnB_Portfolio_script.sql" class="button large">View Code</a></li>
-								</ul>
-							</article>
+  <div class="grid gap-6 md:grid-cols-3">
+    <!-- ARCHIVE CARD TEMPLATE (copy/paste this block to add more) -->
+    <div class="rounded-2xl border p-6 shadow-sm dark:border-zinc-800">
+      <a href="https://github.com/AlainJulien/AirBnB_Analytics/blob/main/AirBnB_Portfolio_script.sql" target="_blank" rel="noopener noreferrer" class="group block">
+      <!-- Image placeholder: replace with <img src="images/your-image.jpg" ...> when ready -->
+       <img src="images/US_JerseyShore_US_Header.jpg" class="mb-4 h-40 w-full rounded-xl object-cover" alt="Project image" loading="lazy" />
+      <!--<div class="mb-4 flex h-40 w-full items-center justify-center rounded-xl bg-zinc-100 text-xs text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400">
+        Project image placeholder
+      </div> -->
+      <h3 class="text-lg font-semibold">Data Cleaning In Microsoft SQL Server</h3>
+    </a>
+      <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300">Cleaning up raw AirBnB data for analysis.</p>
+      <div class="mt-3 flex flex-wrap gap-2 text-xs">
+        <span class="rounded-full border px-2.5 py-1 dark:border-zinc-700">SQL</span>
+        <!--<span class="rounded-full border px-2.5 py-1 dark:border-zinc-700">Tag 2</span>
+        <span class="rounded-full border px-2.5 py-1 dark:border-zinc-700">Tag 3</span> -->
+      </div>
+      <!-- Optional links -->
+      <!-- <div class="mt-4 flex gap-3 text-sm">
+        <a href="#" class="hover:underline">Code</a>
+        <a href="#" class="hover:underline">Write‑up</a>
+      </div> -->
+    </div>
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<h2><a href="https://github.com/AlainJulien/Excel_Portfolio">AJ's Excel Dashboard<br />
-											Visualizations</a></h2>
-									</header>
-									<a href="https://github.com/AlainJulien/Excel_Portfolio" class="image fit"><img src="images/Excel image.png" alt="" /></a>
-									<p>This is a directory to my Excel created analysis/dashboards.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/AlainJulien/Excel_Portfolio" class="button">Excel Portfolio</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="https://public.tableau.com/app/profile/alain.julien">AJ's Public Tableau<br />
-										</a></h2>
-									</header>
-									<a href="https://public.tableau.com/app/profile/alain.julien" class="image fit"><img src="images/tableau-public-logo-with-padding.png" alt="" /></a>
-									<p>This is my public Tableau profile containing visualizations I have created.</p>
-									<ul class="actions special">
-										<li><a href="https://public.tableau.com/app/profile/alain.julien" class="button">Tableau Projects</a></li>
-									</ul>
-								</article>
-								<!-- Extra Areas to edit 
-								<article>
-									<header>
-										<span class="date">April 18, 2017</span>
-										<h2><a href="#">Ante mattis<br />
-										interdum dolor</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 14, 2017</span>
-										<h2><a href="#">Tempus sed<br />
-										nulla imperdiet</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 11, 2017</span>
-										<h2><a href="#">Odio magna<br />
-										sed consectetur</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 7, 2017</span>
-										<h2><a href="#">Augue lorem<br />
-										primis vestibulum</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article> -->
-							</section>
+    <div class="rounded-2xl border p-6 shadow-sm dark:border-zinc-800">
+      <a href="https://github.com/AlainJulien/Excel_Portfolio" target="_blank" rel="noopener noreferrer" class="group block">
+      <!-- Image placeholder: replace with <img src="images/your-image.jpg" ...> when ready -->
+       <img src="images/Excel image.png" class="mb-4 h-40 w-full rounded-xl object-cover" alt="Project image" loading="lazy" />
+      <!--<div class="mb-4 flex h-40 w-full items-center justify-center rounded-xl bg-zinc-100 text-xs text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400">
+        Project image placeholder
+      </div> -->
+      <h3 class="text-lg font-semibold">Excel Dashboard Visualizations</h3>
+      </a>
+      <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300">One‑liner: what problem it solved + what you built.</p>
+      <div class="mt-3 flex flex-wrap gap-2 text-xs">
+        <span class="rounded-full border px-2.5 py-1 dark:border-zinc-700">Excel</span>
+        <span class="rounded-full border px-2.5 py-1 dark:border-zinc-700">Visualization</span>
+      </div>
+    </div>
 
-						<!-- Footer 
-							<footer>
-								<div class="pagination">
-									<*!* --<a href="#" class="previous">Prev</a> *--* remove * and -- if using in the future
-									<a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>
-								</div>
-							</footer>
-						-->
-					</div>
+    <div class="rounded-2xl border p-6 shadow-sm dark:border-zinc-800">
+      <a href="https://public.tableau.com/app/profile/alain.julien" target="_blank" rel="noopener noreferrer" class="group block">
+      <!-- Image placeholder: replace with <img src="images/your-image.jpg" ...> when ready -->
+       <img src="images/tableau-public-logo-with-padding.png" class="mb-4 h-40 w-full rounded-xl object-cover" alt="Project image" loading="lazy" />
+      <!--<div class="mb-4 flex h-40 w-full items-center justify-center rounded-xl bg-zinc-100 text-xs text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400">
+        Project image placeholder
+      </div> -->
+      <h3 class="text-lg font-semibold">My Public Tableau</h3>
+      </a>
+      <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300">My public Tableau profile showcasing visualiation done by me.</p>
+      <div class="mt-3 flex flex-wrap gap-2 text-xs">
+        <span class="rounded-full border px-2.5 py-1 dark:border-zinc-700">Tableau</span>
+        <span class="rounded-full border px-2.5 py-1 dark:border-zinc-700">Data Visualization</span>
+        <!--<span class="rounded-full border px-2.5 py-1 dark:border-zinc-700">Tag 3</span> -->
+      </div>
+    </div>
+  </div>
+</section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section class="alt">
-								<h3>Location</h3>
-								<p><br />
-								Chaguanas, Trinidad & Tobago, TT</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(868) 123-4567</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">alain_j@live.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/alain-julien/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
-									<li><a href="https://github.com/AlainJulien" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+    <section id="skills" class="mx-auto max-w-5xl px-4 py-12">
+      <h2 class="mb-6 text-2xl font-semibold">Core Skills</h2>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="rounded-2xl border p-4 dark:border-zinc-800">Excel · SQL (Athena / BigQuery / Postgres)</div>
+        <div class="rounded-2xl border p-4 dark:border-zinc-800">AWS (S3, Glue, Athena, Redshift)</div>
+        <div class="rounded-2xl border p-4 dark:border-zinc-800">Power BI · Tableau · QuickSight · Looker</div>
+        <div class="rounded-2xl border p-4 dark:border-zinc-800">Data Modeling & ETL (Python)</div>
+        <div class="rounded-2xl border p-4 dark:border-zinc-800">Oracle Fusion HCM (UAT/SIT · Test Strategy)</div>
+        <div class="rounded-2xl border p-4 dark:border-zinc-800">Public Sector (Stakeholder Engagement / Management)</div>
+        <div class="rounded-2xl border p-4 dark:border-zinc-800">AI (Prompt Engineering) </div>
+      </div>
+    </section>
 
-			</div>
+    <section id="contact" class="mx-auto max-w-5xl px-4 pb-16">
+      <div class="rounded-2xl border p-6 shadow-sm dark:border-zinc-800">
+        <h2 class="text-2xl font-semibold">Let’s build something impactful</h2>
+        <p class="mt-2 text-zinc-600 dark:text-zinc-300">Open to BI Engineer, Analytics, or Data roles. Remote or hybrid.</p>
+        <div class="mt-5 flex flex-wrap gap-3">
+          <a href="mailto:alain_j@live.com" class="inline-flex items-center gap-2 rounded-xl border px-3 py-2 text-sm">Email</a>
+          <a href="https://www.linkedin.com/in/alain-julien" class="inline-flex items-center gap-2 rounded-xl border px-3 py-2 text-sm">LinkedIn</a>
+          <a href="https://github.com/AlainJulien" class="inline-flex items-center gap-2 rounded-xl border px-3 py-2 text-sm">GitHub</a>
+        </div>
+      </div>
+    </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <footer class="border-t py-10 text-sm text-zinc-600 dark:border-zinc-800 dark:text-zinc-400">
+      <div class="mx-auto max-w-5xl px-4 flex items-center justify-between">
+        <p>© <span id="year"></span> Alain Julien</p>
+        <div class="h-2 w-2 rounded-full" style="background: #18bfef"></div>
+      </div>
+    </footer>
 
-	</body>
+    <script>
+      // Year + Theme toggle
+      document.getElementById('year').textContent = new Date().getFullYear()
+      const btn = document.getElementById('themeToggle')
+      const apply = (theme) => {
+        const root = document.documentElement
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+        const isDark = theme === 'dark' || (theme === 'system' && prefersDark)
+        root.classList.toggle('dark', isDark)
+        localStorage.setItem('theme-v1', theme)
+      }
+      let theme = localStorage.getItem('theme-v1') || 'system'
+      apply(theme)
+      btn.addEventListener('click', () => { theme = theme === 'dark' ? 'light' : 'dark'; apply(theme) })
+    </script>
+  </body>
 </html>
